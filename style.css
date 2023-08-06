@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+
+/* Reset some default margin and padding */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family:  */
+  font-family: 'Poppins', sans-serif;
+  font-size: smaller;
+}
+/* Utils */
+.light {
+  font-weight: lighter;
+}
+
+/* Basic styling for the container */
+.container {
+  width: 100%; /* Occupy the full width of the parent element */
+  max-width: 600px; /* Set a maximum width to prevent excessive stretching on larger screens */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 25px;
+  padding: 20px;
+  width: auto;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  /* background-color: #f0f0f0; */
+  /* box-shadow: 0px 0px 4px 1px #eee; */
+  text-align: center;
+}
+.Head_Section {
+  /* border: 2px solid red; */
+  padding: 5px;
+  /* position: relative; */
+  /* height: 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Head_Section div {
+  /* border-bottom: 1px solid gray; */
+  box-shadow: 1px 1px 1px 0px gray;
+  width: 40%;
+  height: 1px;
+  margin: 4px;
+}
+.Head_Section h4 {
+  /* border: 2px solid red; */
+  width: 30%;
+  height: 20px;
+  color: rgb(87, 170, 74);
+  /* margin-top: 43px; */
+  margin-left: 4px;
+  margin-right: 4px;
+}
+/* Mid Section */
+
+.Offers_Container {
+  /* border: 2px solid red; */
+  padding: 10px;
+}
+.Offers_Container .Box-Offers {
+  box-shadow: 0px 0px 3px 1px #b7b5b5;
+  border-radius: 3px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+  height: auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow 0.4s;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.Offers_Container .Box-Offers:hover {
+  box-shadow: 0px 0px 3px 1px #838282;
+}
+
+.Offers_Container .Box-Offers .BO_Data {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 100%;
+
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.Offers_Container .Box-Offers .Box-Offers-Select-shirt {
+  display: none;
+}
+
+.BO_Data input[type='radio'] {
+  /* width: 40px !important; */
+  height: 15px !important;
+  cursor: pointer;
+}
+.Offers_Container .Box-Offers .BO_Data .BO_Data_mini {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: bold;
+  padding: 8px;
+}
+.Offers_Container .Box-Offers .BO_Data .BO_Data_mini div.BO_Data_min_popular {
+  /* border: 1px solid red; */
+  width: 300px;
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.Offers_Container
+  .Box-Offers
+  .BO_Data
+  .BO_Data_mini
+  div.BO_Data_min_popular
+  span:last-child {
+  margin-left: auto;
+  font-size: small;
+  text-decoration: line-through;
+  color: gray;
+}
+.Offers_Container .Box-Offers .BO_Data .BO_Data_mini span {
+  display: inline-block;
+  margin-top: 4px;
+}
+.Offers_Container div.Box-Offers.current {
+  border: 2px solid green;
+  box-shadow: none;
+}
+
+div.Box-Offers.current .Box-Offers-Select-shirt {
+  /* border: 1px solid red; */
+  width: 300px !important;
+  display: block !important ;
+}
+div.Box-Offers.current .Box-Offers-Select-shirt .shirt-options {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #f2f2f2; */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+div.Box-Offers.current .Box-Offers-Select-shirt label {
+  font-size: 14px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  /* border: 1px solid red; */
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+  margin-left: 15px;
+  letter-spacing: 2px;
+}
+
+div.Box-Offers.current .Box-Offers-Select-shirt select {
+  width: 80%;
+  margin: 3px auto;
+  outline: none;
+  padding: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* .Offers_Container .Box-Offers.current .BO_Data input[type='radio'] {
+  width: 40px !important;
+  height: 15px !important;
+  cursor: pointer;
+} */
+
+.BO_Data_Right {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.BO_Data_Right span {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Bottom Styling */
+.Bottom_Section {
+  /* border: 2px solid red; */
+  padding: 5px;
+  width: 100%;
+}
+.Bottom_Section div {
+  margin: 15px auto;
+}
+.Bottom_Section .Bottom_Top {
+  /* border: 2px solid orange; */
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.Bottom_T_Left {
+  color: rgba(0, 128, 0, 0.794);
+  /* text-shadow: 0px 0px 1px black; */
+}
+.Bottom_Section .Bottom_Top .Bottom_Total {
+  margin-left: auto;
+}
+
+.Bottom_Section .Buttom_btn button {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(24, 87, 24);
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  outline: none;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+}
+.Bottom_Section .Buttom_btn button:hover {
+  background-color: rgb(9, 56, 9);
+}
+.Bottom_Section .Bottom_Fotter {
+  /* border: 2px solid yellow; */
+  text-align: right;
+  font-style: normal;
+  color: rgb(35, 34, 34);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  .Head_Section div {
+    /* border-bottom: 1px solid gray; */
+    box-shadow: 1px 1px 1px 0px gray;
+    width: 30%;
+    height: 1px;
+    margin: 4px;
+  }
+  .Head_Section h4 {
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 20px;
+    color: rgb(87, 170, 74);
+    /* margin-top: 43px; */
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+@media (max-width: 468px) {
+  .Offers_Container .Box-Offers {
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+  }
+  .Offers_Container .Box-Offers .BO_Data .BO_Data_mini div.BO_Data_min_popular {
+    display: block;
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100px;
+    align-items: center;
+    margin-left: 25px;
+    display: flex;
+  }
+}
