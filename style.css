@@ -154,6 +154,7 @@ p {
 }
 .Offers_Container div.Box-Offers.current {
   border: 2px solid #007f61;
+  background-color: #007f610d;
   box-shadow: none;
 }
 
