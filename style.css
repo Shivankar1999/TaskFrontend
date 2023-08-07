@@ -92,6 +92,7 @@ p {
   align-items: center;
   justify-content: space-between;
   transition: box-shadow 0.4s;
+
   cursor: pointer;
   transition: all 0.4s;
 }
@@ -162,6 +163,7 @@ div.Box-Offers.current .Box-Offers-Select-shirt {
   /* border: 1px solid red; */
   width: 300px !important;
   display: block !important ;
+  /* transition: with 0.5s ease-in-out !important; */
 }
 div.Box-Offers.current .Box-Offers-Select-shirt .shirt-options {
   display: flex;
@@ -169,9 +171,26 @@ div.Box-Offers.current .Box-Offers-Select-shirt .shirt-options {
   justify-content: flex-start;
   align-items: center;
   padding: 20px;
+
   /* background-color: #f2f2f2; */
   border-radius: 10px;
+  transition: all 1s ease-in-out !important;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+div.Box-Offers.current
+  .Box-Offers-Select-shirt
+  .shirt-options
+  .shirt-option-No {
+  /* border: 1px solid red; */
+  height: 70px;
+  padding: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 div.Box-Offers.current .Box-Offers-Select-shirt label {
@@ -235,6 +254,8 @@ div.Box-Offers.current .Box-Offers-Select-shirt select {
 .Bottom_Section .Bottom_Top .Bottom_Total {
   margin-left: auto;
   font-size: 22px;
+  /* margin-right: ; */
+  margin-right: 19px;
 }
 
 .Bottom_Section .Buttom_btn button {
