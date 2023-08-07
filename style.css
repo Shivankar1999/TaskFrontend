@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
 
 /* Reset some default margin and padding */
 body,
@@ -7,9 +8,7 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family:  */
-  font-family: 'Poppins', sans-serif;
-  /* font-size: smaller; */
+  font-family: 'Inter', sans-serif;
 }
 /* Utils */
 /* .light {
@@ -67,7 +66,7 @@ p {
   justify-content: center;
   height: auto;
   /* border: 2px solid red; */
-  color: rgb(87, 170, 74);
+  color: #007f61;
   font-size: 27px;
   letter-spacing: 1.3px;
   font-weight: bold;
@@ -89,7 +88,7 @@ p {
   flex-wrap: wrap;
   height: 60px;
   height: auto;
-  padding: 10px;
+  padding: 5px 1px;
   align-items: center;
   justify-content: space-between;
   transition: box-shadow 0.4s;
@@ -154,7 +153,7 @@ p {
   margin-top: 4px;
 }
 .Offers_Container div.Box-Offers.current {
-  border: 2px solid green;
+  border: 2px solid #007f61;
   box-shadow: none;
 }
 
@@ -229,17 +228,18 @@ div.Box-Offers.current .Box-Offers-Select-shirt select {
   align-items: center;
 }
 .Bottom_T_Left {
-  color: rgba(0, 128, 0, 0.794);
+  color: #007f61;
   /* text-shadow: 0px 0px 1px black; */
 }
 .Bottom_Section .Bottom_Top .Bottom_Total {
   margin-left: auto;
+  font-size: 22px;
 }
 
 .Bottom_Section .Buttom_btn button {
   width: 100%;
   height: 40px;
-  background-color: rgb(24, 87, 24);
+  background-color: #007f61;
   border-radius: 3px;
   color: #fff;
   border: none;
@@ -256,8 +256,13 @@ div.Box-Offers.current .Box-Offers-Select-shirt select {
 .Bottom_Section .Bottom_Fotter {
   /* border: 2px solid yellow; */
   text-align: right;
-  font-style: normal;
-  color: rgb(35, 34, 34);
+  font-style: italic;
+  font-style: ;
+  color: #000000;
+
+  font-size: 12px;
+  line-height: 14.52px;
+  /* 14.52px */
 }
 
 /* Media query for smaller screens */
@@ -305,7 +310,9 @@ div.Box-Offers.current .Box-Offers-Select-shirt select {
     font-size: larger;
     width: 95%;
     height: 20px;
-    color: rgb(87, 170, 74);
+    color: 007F61;
+    /* background: #007F61; */
+
     /* margin-top: 43px; */
     margin-left: 4px;
     margin-right: 4px;
